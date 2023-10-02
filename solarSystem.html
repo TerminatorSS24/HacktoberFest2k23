@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar system</title>
+    <link rel="stylesheet" href="solarSystem.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sun"></div>
+        <div class="earth">
+            <div class="moon"></div>
+        </div>
+    </div>
+      <audio id="bgm" loop muted>
+        <source src="interstellar_cornfield (audio-extractor.net).mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <script>
+        const bgm = document.getElementById('bgm');
+    
+        // Play the background music
+        bgm.play();
+    
+        // Listen for the "ended" event and replay the audio
+        bgm.addEventListener('ended', () => {
+          bgm.currentTime = 0; // Reset the playback to the beginning
+          bgm.play();
+        });
+      </script>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Solar System</title>
+  <link href="solarSystem.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <div class="container">
+    <div class="sun"></div>
+    <div class="earth">
+      <div class="moon"></div>
+    </div>
+  </div>
+  <button id="playButton">Play Audio</button>
+  <audio id="bgm" loop>
+    <source src="interstellar_cornfield (audio-extractor.net).mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <script>
+    const bgm = document.getElementById('bgm');
+    const playButton = document.getElementById('playButton');
+
+    // Play the background music when the play button is clicked
+    playButton.addEventListener('click', () => {
+      bgm.play();
+    });
+
+    // Listen for the "ended" event and replay the audio
+    bgm.addEventListener('ended', () => {
+      bgm.currentTime = 0; // Reset the playback to the beginning
+      bgm.play();
+    });
+  </script>
+</body>
+
+</html>
